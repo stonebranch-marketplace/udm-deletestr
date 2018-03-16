@@ -1,0 +1,13 @@
+set echo=yes
+#
+echo	"### delete a string at offset 6 in length 9 and print the results" 
+echo 	###
+#                                                 
+set mydate="todaydaydayday is the $(_date)"       
+#                                                 
+echo 	"$(mydate)"  
+echo 	###                                
+deletestring mydate pos=6 length=9                
+echo 	"$(mydate)"                                  
+#                                                 
+echo ###
